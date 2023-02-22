@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=footer.component.css.map */
+footer .input-group-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer .input-group-text p {
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+footer .input-group-text button {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=footer.component.css.map */
