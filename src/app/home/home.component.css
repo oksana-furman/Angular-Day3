@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=home.component.css.map */
+.container {
+  padding: 20px;
+}
+
+.container .headline {
+  text-align: center;
+}
+/*# sourceMappingURL=home.component.css.map */
