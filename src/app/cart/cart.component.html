@@ -1,7 +1,24 @@
-<div class="cart-item" *ngFor="let item of items">
-
-    <span>{{ item.name }} </span>
-
-    <span>{{ item.price | currency : "EUR"}}</span>
-
+<table class="table table-hover text-center" *ngFor="let item of items; index as i">
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="cart-item">
+            <td><img src="{{ item.photo }}" height="60px" alt="{{ item.name }}"></td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price | currency : "EUR" }}</td>
+            <td><i class="plus fs-5 bi bi-plus-circle-fill" (click)="plusQtty(i)"></i> {{ item.qtty }} <i class="minus fs-5 bi bi-dash-circle-fill" (click)="minusQtty(i)"></i> <i class="delete fs-4 bi bi-trash3-fill text-danger" (click)="deleteQtty(i)"></i></td>
+        </tr>
+        <tr>
+            <th scope="row">Total: {{ total | currency : "EUR" }}</th>
+        </tr>
+    </tbody>
+</table>
+<div *ngIf="items.length==0" id="empty">
+    <h2 class="text-body-tertiary text-center">The cart is empty</h2>
 </div>

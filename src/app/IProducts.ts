@@ -5,5 +5,6 @@ export interface IProducts {
     color: string,
     photo: string,
     description: string,
-    price: number
+    price: number,
+    qtty: number
 }
