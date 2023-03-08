@@ -10,6 +10,11 @@ import { ProductsListComponent } from './products-list/products-list.component';
 import { CartComponent } from './cart/cart.component';
 import { HeroComponent } from './hero/hero.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { DogsComponent } from './dogs/dogs.component';
+import { BirdsComponent } from './birds/birds.component';
+import { CatsComponent } from './cats/cats.component';
+import { ProductDogsDetailComponent } from './product-dogs-detail/product-dogs-detail.component';
+import { ProductBirdsDetailComponent } from './product-birds-detail/product-birds-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ProductsListComponent,
     CartComponent,
     HeroComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    DogsComponent,
+    BirdsComponent,
+    CatsComponent,
+    ProductDogsDetailComponent,
+    ProductBirdsDetailComponent
   ],
   imports: [
     BrowserModule,

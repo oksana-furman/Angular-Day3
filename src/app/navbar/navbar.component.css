@@ -1,8 +1,6 @@
 .nav-link {
   color: white;
 }
-
 .nav-link .dropdown-item:hover {
-  background-color: #736a6a;
-}
-/*# sourceMappingURL=navbar.component.css.map */
+  background-color: rgb(115, 106, 106);
+}/*# sourceMappingURL=navbar.component.css.map */

@@ -13,7 +13,7 @@ export class ProductsListComponent implements OnInit {
  
   constructor(private cartService: CartService) { }
   addToCart(val: IProducts) {
-    window.alert('Your pet has been added to the cart!');
+    // window.alert('Your pet has been added to the cart!');
     this.cartService.addToCart(val);
   }
 

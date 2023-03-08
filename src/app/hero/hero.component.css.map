@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "hero.component.scss"
-    ],
-    "names": [],
-    "file": "hero.component.css"
-}
+{"version":3,"sources":["hero.component.scss","hero.component.css"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,gBAAA;EACA,kDAAA;EACA,4BAAA;EACA,sBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;ACCJ;ADAI;EACI,0CAAA;ACER","file":"hero.component.css"}

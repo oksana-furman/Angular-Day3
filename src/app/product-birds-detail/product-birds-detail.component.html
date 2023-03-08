@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="item">
+        <img src="{{ productBird.photo }}" alt="{{ productBird.name}}">
+    </div>
+    <div class="item">
+        <h3>{{productBird.name}}</h3>
+        <h6>This is {{ productBird.name }}. He is a {{ productBird.age }} years old {{ productBird.color }} {{ productBird.type }}. </h6>
+        <p>description: {{ productBird.description }}</p>
+        <p>You can make {{ productBird.name }} your pet for just {{ productBird.price }} &#8364;.</p>
+        <a class="btn btn-danger mx-2" (click)="addToCart()">Buy</a>
+    </div>
+
+</div>

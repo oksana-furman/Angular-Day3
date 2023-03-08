@@ -3,4 +3,18 @@
     .headline {
         text-align: center;
     }
+    .card {
+        margin: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        img {
+            height: 85%;
+        }
+    }
+    .moreBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
 }

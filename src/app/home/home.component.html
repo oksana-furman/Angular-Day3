@@ -1,9 +1,68 @@
 <div class="container">
-    <h1 class="headline">Pet Store</h1>
     <h3 class="headline">Get yourself a pet</h3>
     <br>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, cupiditate adipisci corrupti temporibus perspiciatis voluptatem enim fugiat officiis libero saepe aut quidem atque culpa fugit obcaecati facere itaque pariatur. Eos illo odit vero similique
         dolor eligendi libero neque optio, laboriosam perferendis, id tempora debitis veritatis soluta reiciendis aliquid consequatur quisquam.</p>
+
+    <div class="item">
+        <h2 class="text-center m-3 p-3">Our cats</h2>
+        <div class="row row-cols-3">
+            <div *ngFor="let val of products; index as i">
+                <div class="card" style="width: 18rem; height: 30rem" *ngIf="i < 3">
+                    <img src="{{ val.photo }}" class="card-img-top" alt="{{ val.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ val.name }}</h5>
+                        <p class="card-text">Price: {{ val.price | currency: 'EUR' }}</p>
+                        <!-- <a class="btn btn-success mx-2" routerLink="/cats/{{ i }}">Details</a>
+                        <a class="btn btn-danger mx-2" (click)="addToCart(val)">Buy</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moreBtn">
+            <button routerLink="/cats" class="btn btn-danger">See all cats</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <h4 class="text-center m-3 p-3">Our dogs</h4>
+        <div class="row row-cols-3">
+            <div *ngFor="let val of dogs; index as i">
+                <div class="card" style="width: 18rem; height: 30rem" *ngIf="i < 3">
+                    <img src="{{ val.photo }}" class="card-img-top" alt="{{ val.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ val.name }}</h5>
+                        <p class="card-text">Price: {{ val.price | currency: 'EUR' }}</p>
+                        <!-- <a class="btn btn-success mx-2" routerLink="/dogs/{{ i }}">Details</a>
+                        <a class="btn btn-danger mx-2" (click)="addToCart(val)">Buy</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moreBtn">
+            <button routerLink="/dogs" class="btn btn-danger">See all dogs</button>
+        </div>
+    </div>
+
+    <div class="item">
+        <h2 class="text-center m-3 p-3">Our birds</h2>
+        <div class="row row-cols-3">
+            <div *ngFor="let val of birds; index as i">
+                <div class="card" style="width: 18rem; height: 30rem" *ngIf="i < 3">
+                    <img src="{{ val.photo }}" class="card-img-top" alt="{{ val.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ val.name }}</h5>
+                        <p class="card-text">Price: {{ val.price }}</p>
+                        <!-- <a class="btn btn-success mx-2" routerLink="/birds/{{ i }}">Details</a> -->
+                        <!-- <a class="btn btn-danger mx-2" (click)="addToCart(val)">Buy</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="moreBtn">
+            <button routerLink="/birds" class="btn btn-danger">See all birds</button>
+        </div>
+    </div>
 
     <h3 class="headline">Headline</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, cupiditate adipisci corrupti temporibus perspiciatis voluptatem enim fugiat officiis libero saepe aut quidem atque culpa fugit obcaecati facere itaque pariatur. Eos illo odit vero similique

@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+}
+.container .item {
+  margin: 10px;
+  width: 500px;
+}
+.container .item img {
+  height: 500px;
+}/*# sourceMappingURL=product-birds-detail.component.css.map */

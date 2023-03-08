@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 class="text-center m-3 p-3">Choose yourself a pet</h1>
+    <h2 class="text-center m-3 p-3">Our birds</h2>
+    <div class="row row-cols-3">
+        <div *ngFor="let val of birds; index as i">
+            <div class="card" style="width: 18rem; height: 30rem">
+                <img src="{{ val.photo }}" class="card-img-top" alt="{{ val.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ val.name }}</h5>
+                    <p class="card-text">Price: {{ val.price }}</p>
+                    <a class="btn btn-success mx-2" routerLink="/birds/{{ i }}">Details</a>
+                    <a class="btn btn-danger mx-2" (click)="addToCart(val)">Buy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -6,17 +6,19 @@ import { IProducts } from './IProducts';
 })
 export class CartService {
   items: IProducts[] = [];
-
+  
 
   constructor() { }
 
   addToCart(product:IProducts){
+
     if(this.items.find(function(val) {return val.name == product.name})) {
       product.qtty++;
     } else {
       this.items.push(product);
     }  
   }
+  
   getItems(){
     return this.items;
   }
